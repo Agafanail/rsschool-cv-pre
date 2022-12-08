@@ -10,6 +10,7 @@
 - **Telegram:** [D_Pavluk](https://t.me/D_Pavluk)
 - **Tel:** +375 33 319 43 19
 - **GitHub:** [Agafanail](https://github.com/Agafanail)
+
 ****
 
 ## About me
@@ -17,7 +18,9 @@ I'm an orthodox priest who wants to be a front-end developer.
 As a priest I have good experience in working with people.
 I also have experiense in web-design and copywriting. 
 Now I want to merge all my skills in front-end development.
+
 ****
+
 ## Skills
 
 **Front-end**
@@ -31,6 +34,7 @@ Now I want to merge all my skills in front-end development.
 
 **Soft-scills**
 - wide experience in public speech and presentations
+
 ****
 
 ## Code Examples
