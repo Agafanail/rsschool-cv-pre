@@ -54,5 +54,5 @@ I have no experience at frontend development. That's why I want to find a traine
 
 ## Languages
 
-- **English.** Intermediate, B1
+- **English** Intermediate, B1
 - **Polish** Reading and speaking
