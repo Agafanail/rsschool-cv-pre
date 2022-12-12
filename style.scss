@@ -1,0 +1,286 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a{
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* End of Reset*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+/* Common styles */
+*{
+    font-family: Poppins;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #EBEAEC;
+}
+
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+li:last-child {
+    :last-child {
+        margin-right: 0px;
+     }
+}
+
+h2 {
+    margin: 0 0 3px 0;
+
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+
+    color: #353232;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #353232;
+}
+
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 0 83px 0;
+}
+
+.menu_logo {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+}
+.menu_list {
+    display: flex;
+}
+
+.menu_link {
+    margin: 0 63px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    &:hover{
+        color: #E10000;
+        transition: color 0.3s;
+    }
+}
+/*END MUNU*/
+
+
+/* TITLE SECTION*/
+.title_page_wrapper {
+    display: flex;
+}
+
+.title_img {
+    margin: 0 0 0 30px;
+}
+
+.title_title {
+    margin-left: -66px;
+    margin-top: 32px;
+}
+
+h1 {
+    margin: 0 0 9px 0;
+
+    font-weight: 700;
+    font-size: 83px;
+    line-height: 144%;
+
+    color: #3F3A45;
+}
+
+.title_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #E10000;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #949494;
+
+    margin: 0 0 95px 0;
+}
+/* END TITLE SECTION*/
+
+/* WHO I AM */
+#About {
+    padding: 0 0 97px 0;
+}
+
+.who_text {
+    max-width: 618px;
+}
+/* END WHO I AM */
+
+/* EDUCATION */
+#Edu{
+    padding-bottom: 97px;
+}
+
+.link a {
+text-decoration:underline;
+}
+/* END EDUCATION */
+
+/* SKILLS */
+#Skills {
+    padding: 0 0 97px 0;
+}
+
+.skills_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skils_item {
+}
+
+.item_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 192%;
+
+    margin: 0 0 11px 0;
+}
+
+.item_text {
+    max-width: 189px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 158%;
+}
+/* END SKILLS */
+
+/* CODE */
+.code {
+max-width: 495px;
+margin: 0 0 97px 0;
+}
+/* END CODE */
+
+/* PROJECTS */
+#Proj {
+    margin-bottom: 100px;
+}
+
+.project_wrapper {
+    display: flex;
+    gap: 111px;
+    padding: 0px 0px 55px 0px;
+}
+
+.project_decription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn a {
+    padding: 18px 110px;
+    border: 1px solid #000000;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    &:hover {
+        background-color: #3F3A45;
+        color: white;
+        transition: color 0.3s;
+    }
+}
+
+.project_img img{
+    height: 100%;
+
+}
