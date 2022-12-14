@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dzmitry Pauliukevich</title>
+    <title>Dmitry Pauliukevich</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
-        <nav class="menu">
-            <div class="menu_logo"> I AM</div>
-            <ul class="menu_list">
-                <li><a href="#About" class="menu_link">About</a></li>
-                <li><a href="#Edu" class="menu_link">Edu</a></li>
-                <li><a href="#Skills" class="menu_link">Skills</a></li>
-                <li><a href="#Code" class="menu_link">Code</a></li>
-                <li><a href="#Proj" class="menu_link">Proj</a></li>
-                <li><a href="#Cont" class="menu_link">Cont</a></li>
-            </ul>
-        </nav>
+            <nav class="menu_header">
+                <div class="menu">
+                    <div class="menu_logo"> I AM</div>
+                    <ul class="menu_list">
+                        <li><a href="#About" class="menu_link">About</a></li>
+                        <li><a href="#Edu" class="menu_link">Edu</a></li>
+                        <li><a href="#Skills" class="menu_link">Skills</a></li>
+                        <li><a href="#Code" class="menu_link">Code</a></li>
+                        <li><a href="#Proj" class="menu_link">Proj</a></li>
+                        <li><a href="#Cont" class="menu_link">Cont</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_burger">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                    </label>
+
+                    <ul class="menubox">
+                        <li><label for="menu_item"> rere</label></li>
+                        <li><a href="#Edu">Edu</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Code">Code</a></li>
+                        <li><a href="#Proj">Proj</a></li>
+                        <li><a href="#Cont">Cont</a></li>
+                        <input id="menu_item" type="checkbox"/>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
 
     <main>
     <section class="title_page">
         <div class="container">
             <div class="title_page_wrapper">
                 <div class="title_img">
-                    <img src="img/photo 1.png" alt="Dzmitry Pauliukevich">
+                    <img src="img/photo1.png" alt="Dmitry Pauliukevich">
                 </div>
                 <div class="title_title">
-                    <h1>Dzmitry Pauliukevich</h1>
+                    <h1>Dmitry Pavlukevich</h1>
                     <div class="title_subtitle">Web-developer | Designer</div>
                 </div>
             </div>
@@ -42,7 +62,7 @@
 
     <section id="About">
         <div class="container">
-            <h2>Who I Am?</h2>
+            <h2>About me</h2>
             <div class="who_text text">
                 I'm an orthodox priest who wants to be a front-end developer.
                 As a priest I have good experience in working with people. I also
@@ -119,12 +139,10 @@
                         for improving HTML and CSS
                         skills from “Фрилансер по жизни” YouTube - chanel.
                     </div>
-                    <div class="btn">
-                        <a href="https://agafanail.github.io/homework/adaptive/pages/">See this work</a>
-                    </div>
+                    <a class="btn" href="https://agafanail.github.io/homework/adaptive/pages/">See this work →</a>
                 </div>
                 <div class="project_img">
-                    <a href="https://agafanail.github.io/homework/adaptive/pages/"><img src="img/bycicle site.jpg" alt="bicycle site"></a>
+                    <a href="https://agafanail.github.io/homework/adaptive/pages/"><img src="img/byciclesite.jpg" alt="bicycle site"></a>
                 </div>
             </div>
             <div class="line"></div>
@@ -132,6 +150,23 @@
     </section>
 
 </main>
+
+<footer id="Cont">
+    <div class="container">
+        <div class="footer_wrapper">
+            <ul class="contacts text">
+                <li>CONTACTS</li>
+                <li><a class="text" href="tel:+375333194319">+375 33 319 43 19</a></li>
+                <li><a class="text" href="mailto:dmitripavluk@gmail.com">dmitripavluk@gmail.com</a></li>
+                <li><a class="text" href="http://https://github.com/Agafanail">GitHub</a></li>
+            </ul>
+            <ul class="logo text">
+                <li><a href="https://rs.school/js/"><img src="img/logo.svg" alt="rs school logo"></a></li>
+                <li>2022 / Q4-pre</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
