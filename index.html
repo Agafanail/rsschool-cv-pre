@@ -4,9 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dzmitry Pauliukevich</title>
+    <title>Dmitry Pauliukevich</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="menu_header">
+                <div class="menu">
+                    <div class="menu_logo"> I AM</div>
+                    <ul class="menu_list">
+                        <li><a href="#About" class="menu_link">About</a></li>
+                        <li><a href="#Edu" class="menu_link">Edu</a></li>
+                        <li><a href="#Skills" class="menu_link">Skills</a></li>
+                        <li><a href="#Code" class="menu_link">Code</a></li>
+                        <li><a href="#Proj" class="menu_link">Proj</a></li>
+                        <li><a href="#Cont" class="menu_link">Cont</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_burger">
+                    <input id="menu-toggle" type="checkbox">
+                    <label class="menu-btn" for="menu-toggle">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                    </label>
+
+                    <ul class="menubox">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Edu">Edu</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Code">Code</a></li>
+                        <li><a href="#Proj">Proj</a></li>
+                        <li><a href="#Cont">Cont</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="title_page">
+        <div class="container">
+            <div class="title_page_wrapper">
+                <div class="title_img">
+                    <img src="img/photo1.png" alt="Dmitry Pauliukevich">
+                </div>
+                <div class="title_title">
+                    <h1>Dmitry Pavlukevich</h1>
+                    <div class="title_subtitle">Web-developer | Designer</div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="container">
+            <h2>About me</h2>
+            <div class="who_text text">
+                I'm an orthodox priest who wants to be a front-end developer.
+                As a priest I have good experience in working with people. I also
+                have experiense in web-design and copywriting. Now I want to merge
+                all my skills in front-end development.
+            </div>
+        </div>
+    </section>
+
+    <section id="Edu">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education_list text">
+                <li>— Minsk Theological Academy</li>
+                <li class="link">— <a href="https://bureau.ru/school/editors/14/">School of editors in Bureau Gorbunov</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills_wrapper">
+                <div class="skils_item">
+                    <div class="item_title">FRONT-END</div>
+                    <ul class="item_text">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skils_item">
+                    <div class="item_title">Web-Design</div>
+                    <ul class="item_text">
+                        <li>Figma</li>
+                        <li>Adobe (PS, ID)</li>
+                    </ul>
+                </div>
+                <div class="skils_item">
+                    <div class="item_title">Languages</div>
+                    <ul class="item_text">
+                        <li>English:  B1</li>
+                        <li>Polish:  read/speak</li>
+                    </ul>
+                </div>
+                <div class="skils_item">
+                    <div class="item_title">Soft-scills</div>
+                    <div class="item_text">
+                        Wide experience in public speech and presentations
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Code">
+        <div class="container">
+            <h2>Code Example</h2>
+            <div class="code">
+                <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> showMessage<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    alert<span style="color: #009900;">&#40;</span> <span style="color: #3366CC;">'Всем привет!'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span>
+showMessage<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="Proj">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project_wrapper">
+                <div class="project_decription">
+                    <div class="project_text text">Landing page about bicycles. It is training work
+                        for improving HTML and CSS
+                        skills from “Фрилансер по жизни” YouTube - chanel.
+                    </div>
+                    <a class="btn" href="https://agafanail.github.io/homework/adaptive/pages/">See this work →</a>
+                </div>
+                <div class="project_img">
+                    <a href="https://agafanail.github.io/homework/adaptive/pages/"><img src="img/byciclesite.jpg" alt="bicycle site"></a>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="Cont">
+    <div class="container">
+        <div class="footer_wrapper">
+            <ul class="contacts text">
+                <li>CONTACTS</li>
+                <li><a class="text" href="tel:+375333194319">+375 33 319 43 19</a></li>
+                <li><a class="text" href="mailto:dmitripavluk@gmail.com">dmitripavluk@gmail.com</a></li>
+                <li><a class="text" href="http://https://github.com/Agafanail">GitHub</a></li>
+            </ul>
+            <ul class="logo text">
+                <li><a href="https://rs.school/js/"><img src="img/logo.svg" alt="rs school logo"></a></li>
+                <li>2022 / Q4-pre</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
