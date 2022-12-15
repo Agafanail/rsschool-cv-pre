@@ -171,6 +171,7 @@ h2 {
 @media (max-width: 960px) {
   .menu_burger {
     display: block;
+    width: 100%;
   }
 }
 
@@ -181,34 +182,35 @@ h2 {
 .menu-btn {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 26px;
-  height: 26px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
   cursor: pointer;
   z-index: 1;
+  background-color: #EBEAEC;
+  margin-left: -20px;
 }
 
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
+.one, .two, .three {
+  width: 26px;
+  height: 2px;
+  background-color: #616161;
   display: block;
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  transition-duration: 0.25s;
+  right: 20px;
 }
 
-.menu-btn > span::before {
-  content: "";
-  top: -8px;
+.one {
+  top: 20px;
 }
 
-.menu-btn > span::after {
-  content: "";
-  top: 8px;
+.two {
+  top: 30px;
+}
+
+.three {
+  top: 40px;
 }
 
 .menubox {
@@ -216,39 +218,39 @@ h2 {
   position: fixed;
   visibility: hidden;
   top: 0;
-  left: -100%;
+  top: -100%;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 80px 10px;
   font-size: 35px;
   line-height: 65px;
-  background-color: #b0b0b0;
+  background-color: rgba(192, 192, 192, 0.95);
   transition-duration: 0.25s;
+  margin-left: -20px;
 }
 
-#menu-toggle:checked ~ .menu-btn > span {
+#menu-toggle:checked ~ .menu-btn > .two {
   transform: rotate(45deg);
 }
 
-#menu-toggle:checked ~ .menu-btn > span::before {
-  top: 0;
+#menu-toggle:checked ~ .menu-btn > .one {
+  top: -20px;
   transform: rotate(0);
 }
 
-#menu-toggle:checked ~ .menu-btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
+#menu-toggle:checked ~ .menu-btn > .three {
+  top: 30px;
+  transform: rotate(135deg);
 }
 
 #menu-toggle:checked ~ .menubox {
   visibility: visible;
-  left: 0;
+  top: 0;
 }
 
-#menu_item:checked ~ .menubox {
-  visibility: hidden;
-  left: -100%;
+#menu-toggle:checked ~ .menu-btn {
+  background-color: rgba(192, 192, 192, 0.95);
 }
 
 /* TITLE SECTION*/
@@ -256,7 +258,7 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .title_page_wrapper {
     flex-direction: column-reverse;
   }
@@ -265,12 +267,22 @@ h2 {
 .title_img {
   margin: 0 0 0 30px;
 }
+@media (max-width: 532px) {
+  .title_img {
+    margin: 0;
+  }
+}
+
+.title_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .title_title {
   margin-left: -66px;
   margin-top: 32px;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .title_title {
     margin-left: 0px;
   }
@@ -282,6 +294,11 @@ h1 {
   font-size: 76px;
   line-height: 144%;
   color: #3F3A45;
+}
+@media (max-width: 532px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 .title_subtitle {
@@ -306,6 +323,11 @@ h1 {
 
 .who_text {
   max-width: 618px;
+}
+@media (max-width: 340px) {
+  .who_text {
+    max-width: 100%;
+  }
 }
 
 /* END WHO I AM */
@@ -362,7 +384,7 @@ h1 {
   gap: 111px;
   padding: 0px 0px 55px 0px;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .project_wrapper {
     flex-direction: column-reverse;
   }
@@ -372,6 +394,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .project_text {
+    margin: 0 0 40px 0;
+  }
 }
 
 .btn {
@@ -390,7 +418,7 @@ h1 {
 .project_img img {
   height: 100%;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .project_img img {
     width: 100%;
   }
@@ -407,7 +435,7 @@ h1 {
   justify-content: space-between;
   align-items: flex-end;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .footer_wrapper {
     flex-direction: column;
     justify-content: center;
@@ -422,8 +450,14 @@ h1 {
 .contacts li a:hover {
   color: #E10000;
 }
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .contacts li {
     text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .contacts {
+    margin: 0 0 50px 0;
   }
 }/*# sourceMappingURL=style.css.map */
