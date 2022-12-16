@@ -315,7 +315,8 @@ h1 {
 
 /* WHO I AM */
 #About {
-    padding: 0 0 97px 0;
+    // padding: 0 0 97px 0;
+    margin: 0 0 97px 0;
 }
 
 .who_text {
@@ -328,7 +329,7 @@ h1 {
 
 /* EDUCATION */
 #Edu{
-    padding-bottom: 97px;
+    margin: 0 0 97px 0;
 }
 
 .link a {
@@ -338,7 +339,7 @@ text-decoration:underline;
 
 /* SKILLS */
 #Skills {
-    padding: 0 0 97px 0;
+    margin: 0 0 97px 0;
 }
 
 .skills_wrapper {
@@ -369,9 +370,12 @@ flex: 1 1 189px;
 /* END SKILLS */
 
 /* CODE */
-.code {
+.code pre{
 max-width: 495px;
 margin: 0 0 97px 0;
+background-color:#cbcbcb;
+border-radius: 15px;
+padding: 10px;
 }
 /* END CODE */
 
@@ -379,7 +383,7 @@ margin: 0 0 97px 0;
 .project_wrapper {
     display: flex;
     gap: 111px;
-    padding: 0px 0px 55px 0px;
+    margin: 0px 0px 55px 0px;
     @media (max-width: 960px) {
       flex-direction: column-reverse;
     }
@@ -421,7 +425,7 @@ margin: 0 0 97px 0;
 
 /* FOOTER */
 #Cont {
-  padding-bottom: 51px;
+  margin-bottom: 51px;
 }
 
 .footer_wrapper {
@@ -450,7 +454,7 @@ margin: 0 0 97px 0;
 
 .contacts{
   @media (max-width: 960px) {
-    margin: 0 0 50px 0;
+    padding: 0 0 50px 0;
   }
 }
 /* END FOOTER */
